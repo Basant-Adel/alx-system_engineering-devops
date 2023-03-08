@@ -5,4 +5,5 @@ Tasks
 3. The long format
 4. Hidden files
 5. I love numbers
+6. Welcome
 
