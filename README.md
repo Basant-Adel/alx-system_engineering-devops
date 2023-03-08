@@ -1,2 +1,2 @@
-My first README
+Task 0. Where am I?
 Shell Basics
