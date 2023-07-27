@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Write a Bash script that displays Best School 10 times using while
 
-b = 1
+b=1
 
 while [ $b -le 10 ]
 do
