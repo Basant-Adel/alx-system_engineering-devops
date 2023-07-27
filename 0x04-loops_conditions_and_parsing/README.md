@@ -4,17 +4,17 @@
 Read or watch:
 --------------
 
-Loops sample
-Variable assignment and arithmetic
-Comparison operators
-File test operators
-Make your scripts portable
+1. Loops sample
+2. Variable assignment and arithmetic
+3. Comparison operators
+4. File test operators
+5. Make your scripts portable
 
 # man or help:
 
-env
-cut
-for
-while
-until
-if
+1. env
+2. cut
+3. for
+4. while
+5. until
+6. if
