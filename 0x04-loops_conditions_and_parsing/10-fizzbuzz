@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Write a Bash script to print numbers from 1 to 100-> (FizzBuzz)
+
+for b in {1..100}
+do
+  if (( b % 3 == 0 && b % 5 == 0 )); then
+    echo "FizzBuzz";
+  elif (( b % 3 == 0 ));
+  then
+    echo "Fizz";
+  elif (( b % 5 == 0 )); then
+    echo "Buzz";
+  else
+    echo "$b";
+  fi
+done
