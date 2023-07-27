@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Write content of current Dir in a list format
+
+blist=$(ls)
+
+for b in $blist; do
+  echo "${b#*-}"
+done
