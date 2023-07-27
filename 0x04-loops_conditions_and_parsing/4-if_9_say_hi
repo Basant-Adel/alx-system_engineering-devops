@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Write a Bash script that say Best School 10 times, and in line 9 say Hi
+b=1
+while [ $b -le 10 ]
+do
+    echo "Best School";
+    if [ $b -eq 9 ]
+    then
+        echo "Hi";
+    fi
+    ((b++));
+done
