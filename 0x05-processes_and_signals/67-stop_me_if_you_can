@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Make a copy and name it 67-stop_me_if_you_can, that kills the file 7 instead of the file 4 one
+pkill -f 7-highlander
