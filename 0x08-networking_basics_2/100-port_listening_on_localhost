@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Write script that listens on port 98 on localhost -> we can use this script across networks as well Try running it between your local PC and your remote server
+nc -l localhost 98
