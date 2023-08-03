@@ -27,13 +27,13 @@ https://www.webopedia.com/insights/ipv6-ipv4-difference/
 10. Localhost
 https://en.wikipedia.org/wiki/Localhost
 11. TCP and UDP
-https://www.howtogeek.com/190014/htg-explains-what-is-the-difference-
+https://www.howtogeek.com/190014/htg-explains-what-is-the-difference-\
 between-tcp-and-udp/
-12. TCP/UDP ports List
+13. TCP/UDP ports List
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers
-13. What is ping /ICMP
+14. What is ping /ICMP
 https://en.wikipedia.org/wiki/Ping_%28networking_utility%29
-14. Positional parameters
+15. Positional parameters
 https://wiki.bash-hackers.org/scripting/posparams
 
 
