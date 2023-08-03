@@ -27,8 +27,7 @@ https://www.webopedia.com/insights/ipv6-ipv4-difference/
 10. Localhost
 https://en.wikipedia.org/wiki/Localhost
 11. TCP and UDP
-https://www.howtogeek.com/190014/htg-explains-what-is-the-difference-\
-between-tcp-and-udp/
+https://www.howtogeek.com/190014/htg-explains-what-is-the-difference-between-tcp-and-udp/
 13. TCP/UDP ports List
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers
 14. What is ping /ICMP
