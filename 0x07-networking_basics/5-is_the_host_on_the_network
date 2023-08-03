@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Write script to ping an IP address passed as argument -> Accepts a str as argument, If no argument passed -> 5-.. {IP_ADDRESS}
+IP="${1}";
+
+ba=$(basename "${BASH_SOURCE[@]}");
+
+if ! [ "$IP" ];
+then
+	echo "Usage: ${ba} {IP_ADDRESS}";
+else
+	ping -c 5 "${IP}";
+fi
