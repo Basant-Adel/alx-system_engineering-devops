@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# The user root is, on Linux, the “superuser”.
+# It can do anything it wants, that’s a good and bad thing.
+
+sudo -u "$1" whoami
