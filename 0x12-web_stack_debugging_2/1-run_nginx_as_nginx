@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Root user is superuser-> can do anything-> Unix machine top administrator
+
+sudo sed -i '1s/.*/user nginx;/' /etc/nginx/nginx.conf
+
+chmod 444 /etc/nginx/nginx.conf
+
+pkill apache2
+
+sudo sed -i 's/80/8080/g' /etc/nginx/sites-available/default
+
+sudo -u nginx service nginx restart
