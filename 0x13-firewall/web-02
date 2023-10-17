@@ -1,0 +1,10 @@
+#/usr/bin/env bash
+# How to create New Server login
+
+
+eval $("ssh-agent")
+
+ssh-add ~/.ssh/0-RSA_public_key
+
+
+ssh ubuntu@54.160.81.217
