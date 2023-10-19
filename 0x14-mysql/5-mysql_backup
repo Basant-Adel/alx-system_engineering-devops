@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# What if the data center where both your primary 
+
+# backup.sql file
+
+mysqldump -u root -p"$1" --all-databases > backup.sql
+
+# tar.gz archive
+
+tar -czvf "$(date +%d-%m-%Y).tar.gz" backup.sql
