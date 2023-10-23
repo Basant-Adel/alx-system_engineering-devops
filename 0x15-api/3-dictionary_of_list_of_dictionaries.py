@@ -9,7 +9,7 @@ if __name__ == "__main__":
     URL = 'https://jsonplaceholder.typicode.com'
     ulist = requests.get(f'{URL}/users').json()
     tlist = requests.get(f'{URL}/todos').json()
-    alltodoemp = {}
+    todo_all_employees = {}
     for user in ulist:
         user_id = user.get('id')
         emplist = []
@@ -20,6 +20,6 @@ if __name__ == "__main__":
                                  "task": task.get('title'),
                                  "completed": task.get('completed')
                                  })
-        alltodoemp[user_id] = emplist
-    with open("alltodoemp.json", "w") as outfile:
-        json.dump(alltodoemp, outfile)
+        todo_all_employees[user_id] = emplist
+    with open("todo_all_employees.json", "w") as outfile:
+        json.dump(todo_all_employees, outfile)
