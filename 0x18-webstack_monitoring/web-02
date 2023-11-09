@@ -4,7 +4,7 @@
 
 eval $("ssh-agent")
 
-ssh-add ~/.ssh/0-RSA_public_key
+ssh-add ~/.ssh/school
 
 
 ssh ubuntu@54.160.81.217
