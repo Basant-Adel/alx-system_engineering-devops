@@ -1,0 +1,10 @@
+#/usr/bin/env bash
+# How to create New Server login
+
+
+eval $("ssh-agent")
+
+ssh-add ~/.ssh/id_rsa
+
+
+ssh ubuntu@100.26.228.71
