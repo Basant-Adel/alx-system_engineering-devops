@@ -1,5 +1,3 @@
 #!/usr/bin/env bash
 # Get process IDs -> (PIDs) of Gunicorn processes
-
-PID=$(pgrep gunicorn | head -n 1)
-kill -HUP $PID
+kill -HUP $(pgrep gunicorn | head -n 1)
