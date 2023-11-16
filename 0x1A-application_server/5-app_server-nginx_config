@@ -1,0 +1,44 @@
+# Upload My Nginx Config
+server {
+    # Listen on port 80
+    listen      80 default_server;
+    listen      [::]:80 default_server ipv6only=on;
+
+    # Use IP server name
+    server_name 100.25.220.124;
+
+    # HTTP response header
+    add_header  X-Served-By 383330-web-01;
+
+    # Serve /airbnb-onepage/
+    location = /airbnb-onepage/ {
+        proxy_pass http://127.0.0.1:5000/airbnb-onepage/;
+    }
+
+    # SERVER /number_odd_or_even/
+    location ~ /airbnb-dynamic/number_odd_or_even/(\d+)$ {
+        proxy_pass http://127.0.0.1:5001/number_odd_or_even/$1;
+    }
+
+    # SERVER /api
+    location /api {
+        proxy_pass http://127.0.0.1:5002/api;
+    }
+
+    # CONFIGURE /2-hbnb.py
+    location / {
+        proxy_pass http://127.0.0.1:5003/2-hbnb;
+    }
+
+    # SERVER /static/
+    location /static {
+        alias web_dynamic/static/;
+    }
+
+    # 404 error page
+    error_page 404 /404.html;
+    location /404 {
+        root /var/www/html;
+        internal;
+    }
+}
