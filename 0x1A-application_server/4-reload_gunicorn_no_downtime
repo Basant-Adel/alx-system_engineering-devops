@@ -1,3 +1,11 @@
 #!/usr/bin/env bash
-# Get process IDs -> (PIDs) of Gunicorn processes
-ps aux | grep gunicorn | awk '{ print $2 }' | xargs kill -HUP
+# GUNICORN
+# Check if there any Gunicorn processes
+
+if pgrep -q gunicorn; then
+    # If processes exist -> send SIGHUP signal -> graceful reload
+    pgrep gunicorn | xargs kill -HUP
+    echo "Gunicorn gracefully reloaded."
+else
+    echo "No Gunicorn processes found."
+fi
