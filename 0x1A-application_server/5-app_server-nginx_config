@@ -32,7 +32,7 @@ server {
 
     # SERVER /static/
     location /static {
-        alias web_dynamic/static/;
+        alias /path/to/AirBnB_clone_v4/web_dynamic/static/;
     }
 
     # 404 error page
