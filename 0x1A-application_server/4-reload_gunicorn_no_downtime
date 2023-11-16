@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # GUNICORN
 
-pgrep gunicorn | xargs kill -HUP
+pgrep gunicorn | xargs -I {} kill -HUP {}
